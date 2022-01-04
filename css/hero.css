@@ -1,32 +1,58 @@
 body{
 	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 	font-size: 20px;
 	line-height: 30px;
 }
 
 header{
 	background-color: palevioletred;
-	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	text-align: left;
+
 }
 
-h1, h2, h3, h4{
-	font-family: 'Poppins', sans-serif;
+
+/* header styles */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#column1{
+    text-align: center;
 }
 
 header h1{
 	color:  white;
 	font-size: 50px;
-
 }
 
-header img{
-	border-radius: 170px;
-    width: 300px;
-    border: 20px solid white;
+#avatar{
+	object-fit: cover;
+	width: 350px;
+	height: 350px;
+    border: 10px solid white;
 }
+
+header p{
+	color: white;
+	max-width: 70%;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+
+/*Main styles*/
 
 main{
 	max-width: 800px;
@@ -34,32 +60,46 @@ main{
 	padding: 20px;
 }
 
-main img{
+#friends{
 	max-width: 100%;
+	padding-top: 30px;
+}
+
+
+/*Headings styles*/
+
+h1, h2, h3, h4{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
 
 h2{
 	font-size: 40px;
-	color: pink;
-	margin: 40px 0 10px;
+	color: #613F75;
+	margin: 60px 0 10px;
 }
 
 h3{
 	font-size: 30px;
 	margin: 40px 0 10px;
+	color: #7D82B8;
 }
 
 h4{
 	font-size: 25px;
-	margin: 40px 0 10px;
+	margin: 40px 0 5px;
+	color: palevioletred;
+}
+
+#powers{
+	margin-top: 5px;
 }
 
 a{
 	color: pink;
 }
 a:hover{
-	color: white;
-	background-color:  #483a94;
+	color: #79B791;
 }
 
 footer{
@@ -78,6 +118,7 @@ footer a{
 }
 
 footer a:hover{
+	color: white;
 	opacity: .5;
 	background-color: transparent;
 }
@@ -88,9 +129,6 @@ p.caption{
 	margin-top: 0;
 	font-size: 16px;
 }
-
-
-
 
 
 
