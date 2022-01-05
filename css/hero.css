@@ -20,6 +20,44 @@ header{
 .column {
   float: left;
   width: 50%;
+  align-content: center;
+}
+
+#avatarbox{
+	position: relative;	
+	left: 25%;		
+	width: 350px;
+	height: 350px;
+  border: 10px solid white;
+}
+
+#avatar1{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	transition: .5s;
+
+}
+
+#avatarhover{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	opacity: 0;
+	transition: .5s;
+
+}
+
+#avatar1:hover{
+	opacity: 0;
+	transition: .5s;
+}
+
+#avatarhover:hover{
+	opacity: 1;
+	transition: .5s;
 }
 
 .row:after {
@@ -28,20 +66,9 @@ header{
   clear: both;
 }
 
-#column1{
-    text-align: center;
-}
-
 header h1{
 	color:  white;
 	font-size: 50px;
-}
-
-#avatar{
-	object-fit: cover;
-	width: 350px;
-	height: 350px;
-    border: 10px solid white;
 }
 
 header p{
@@ -60,12 +87,38 @@ main{
 	padding: 20px;
 }
 
-#friends{
+#friendsbox{
 	max-width: 100%;
-	padding-top: 30px;
+	height: 444px;
+	position: relative;
+	margin-top: 30px;
 }
 
+#friends1{
+	max-width: 100%;
+	height: 444px;
+	position: absolute;
+	transition: .5s;
+	opacity: 1;
+}
 
+#friendshover{
+	max-width: 100%;
+	height: 444px;
+	position: absolute;
+	transition: .5s;
+	opacity: 0;
+}
+
+#friends1:hover{
+	opacity: 0;
+	transition: .5s;
+}
+
+#friendshover:hover{
+	opacity: 1;
+	transition: .5s;
+}
 /*Headings styles*/
 
 h1, h2, h3, h4{
